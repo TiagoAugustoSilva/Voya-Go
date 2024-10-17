@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Kalnia+Glaze:wght@100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <title>Voya-Go App Web</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo-Bag.png" alt="">
+                </a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#Especialidades">Destinos</a></li>
+                    <li><a href="#Sobre">Bug's Life</a></li>
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#fale">Saiba +</a></li>
+                </ul>
+            </nav>
+            <div class="Bem-vindo">
+                <h6> Bem vindo! <br> Conheça o seu guia Turístico Virtual</h6>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site" style="margin-bottom: 12rem ;">
+                        <!-- Ajuste o valor conforme necessário -->
+                        <h1 id="typed-text" style="font-family: 'Oswald', cursive; color: #e6dfdf;"></h1>
+                        <!-- Aqui vai o texto animado -->
+                    </div>
+                    <div class="img-topo-site luz" style="margin-top: -8rem ;">
+                        <img src="./img/voya-go-Photoroom.png" alt="APP Voya-Go"
+                            style="width: 100%; height: 700px; object-fit: cover;">
+                    </div>
+                </div><!--flex -->
+            </div><!--interface - main-->
+        </section>
+
+
+        <section class="especialidades" id="Especialidades">
+            <div class="interface">
+                <h2 class="titulo">DESTINOS PARA CONHECER</h2>
+                <div class="grid-especialidades">
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Chile</h3>
+                        <img src="./img/chile.jpg" alt="Chile" onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Roma</h3>
+                        <img src="./img/estatua.png" alt="Roma" onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Vaticano</h3>
+                        <img src="./img/roma-vat.jpg" alt="Vaticano" onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Coliseu</h3>
+                        <img src="./img/roma-3.jpg" alt="Coliseu" onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Quebec</h3>
+                        <img src="./img/Turismo-Canada-Quebec-Chateau-Frontenac.jpg" alt="Quebec"
+                            onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Veneza</h3>
+                        <img src="./img/italy-2.jpg" alt="Veneza" onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Praça de Roma</h3>
+                        <img src="./img/roma-atracao.png" alt="Praça de Roma" onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Dubai</h3>
+                        <img src="./img/principais-pontos-turisticos-de-dubai.jpg" alt="Dubai"
+                            onclick="openModal(this.src, this.alt)">
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-wifi"></i>
+                        <h3>Roma</h3>
+                        <img src="./img/roma-passeio.png" alt="Roma" onclick="openModal(this.src, this.alt)">
+                    </div>
+                </div>
+                <!-- Modal para visualização das imagens -->
+                <div id="imageModal" class="modal" style="display:none;">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage" alt="">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="Sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./img/BUGS-1.png" alt="">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2 class="me">MUITO PRAZER, <br> <span style="color: #3d0868;">SOMOS O GRUPO BUG'S LIFE</span>
+                        </h2>
+                        <p class="p-custom"><span style="color: #000000;">
+                                <span style="color: #3d0868;">O Voya-Go</span> <span style="color: #000000;">é um
+                                    aplicativo inovador que atua como um guia turístico digital, projetado para
+                                    proporcionar experiências de viagem personalizadas e inesquecíveis. Com ele, os
+                                    usuários podem planejar, explorar e aproveitar destinos de forma prática, tudo na
+                                    palma da mão. O Voya-Go simplifica o processo de organização de viagens, oferecendo
+                                    informações detalhadas sobre locais turísticos,
+                                    dicas de roteiros e sugestões personalizadas com base nos interesses de cada
+                                    viajante.</span><br>
+                                "Grupo UPX: juntos desde o 1º semestre, estamos mais uma vez prontos
+                                para demonstrar nosso desempenho e criatividade na UPX IV. Let's Go!"
+                        </p>
+
+                        <div class="btn-social">
+                            <a href="https://github.com/TiagoAugustoSilva" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/tiago-augusto-melo-silva-177127b9/"
+                                target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://web.whatsapp.com/send?phone=5515997842321" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="imagens-footer" id="fale">
+            <div class="interface">
+                <h2 class="titulo">Confira <span style="color:#3b045f;">o desenvolvimento do APP</span></h2>
+                 <div class="voyago"><img src="./img/logo-2.PNG" alt=""></div>
+                <h4 class="h4-descricao">
+                    O Voya-Go tem como missão tornar as viagens acessíveis e inclusivas para todos. <br>Nosso aplicativo oferece uma experiência turística única, permitindo que os usuários descubram novos destinos de forma independente. <br>
+                     Além disso, o Voya-Go se dedica a integrar pessoas com deficiência auditiva, 
+                    oferecendo suporte em tempo real e recursos que as empoderam a explorar o mundo com autonomia, eliminando barreiras e promovendo a inclusão em cada jornada.</h4>
+
+            
+                <div class="grid-imagens">
+                    <div class="imagem-item">
+                        <div class="descricao"><p class="p-descricao"> Tela incial de login, onde o usuário deverá autenticar seu usuário para ter acesso ao APP.</p></div>
+                        <img src="./img/tela-de-login.png" alt="Aventura 1">
+                    </div>
+                    <div class="imagem-item">
+                        <div class="descricao"><p class="p-descricao"> Tela de cadastro, será necessário cadastrar usuário o mesmo será enviado para o Banco de Dados Relacional no caso iremos trabalhar com o MYSQL</p></div>
+                        <img src="./img/Tela-de-Cadastro.png" alt="Aventura 2">
+                    </div>
+                    <div class="imagem-item">
+                        <div class="descricao"><p class="p-descricao"> Dashboard será integrado a uma API de mapa GPS Online, está parte ainda se encontra em desenvolvimento!</p></div>
+                        <img src="./img/gps-car.png" alt="Aventura 3">
+                    </div>
+                </div>
+                <button id="btnVoltarTopo" onclick="voltarAoTopo()"><i class="bi bi-airplane-engines"></i></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="agradecimento">
+                <h5>Obrigado por visitar o Voya-Go! Esperamos que tenha uma viagem incrível e muitas aventuras
+                    inesquecíveis.</h5>
+                <h5>&copy; 2024 Voya-Go. Todos os direitos reservados.</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var options = {
+            strings: ["Seja bem vindo ao Voya-Go", "Seu guia turístico digital para experiências inesquecíveis.", "Planeje, explore e aproveite – tudo com o nosso app!", "Seu próximo destino está a um toque de distância!"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        };
+
+        var typed = new Typed("#typed-text", options);
+    </script>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btnVoltarTopo").style.display = "block";
+            } else {
+                document.getElementById("btnVoltarTopo").style.display = "none";
+            }
+        }
+
+        function voltarAoTopo() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Função para abrir o modal
+        function openModal(imageSrc, imageAlt) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            const captionText = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+            modalImg.alt = imageAlt;
+            captionText.innerHTML = imageAlt; // Adiciona a descrição da imagem
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
