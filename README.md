@@ -19,10 +19,10 @@ Interface Interativa: Uma experiência visual envolvente com imagens e vídeos q
 [![Assistir ao vídeo](https://img.youtube.com/vi/mrYKP79yC0A/0.jpg)](https://youtu.be/mrYKP79yC0A)
 
 
-![ALT Text](img-git/tela-1)
-![ALT Text](img-git/tela-2)
-![ALT Text](img-git/tela-3)
-![ALT Text](img-git/tela-4)
-![ALT Text](img-git/tela-5)
-![ALT Text](img-git/tela-6)
+![ALT Text](img-git/tela-1.png)
+![ALT Text](img-git/tela-2.png)
+![ALT Text](img-git/tela-3.png)
+![ALT Text](img-git/tela-4.png)
+![ALT Text](img-git/tela-5.png)
+![ALT Text](img-git/tela-6.png)
 
