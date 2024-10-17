@@ -20,7 +20,6 @@ Interface Interativa: Uma experiência visual envolvente com imagens e vídeos q
 
 
 ![ALT Text](img-git/tela-1.jpg)
-![ALT Text](img-git/tela-2.jpg)
 ![ALT Text](img-git/tela-3.jpg)
 ![ALT Text](img-git/tela-4.jpg)
 ![ALT Text](img-git/tela-5.jpg)
