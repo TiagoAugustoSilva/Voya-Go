@@ -1,5 +1,5 @@
 # Voya-Go
-Lading-Page trabalho de Faculdade
+Landing-Page trabalho de Faculdade
 
 
 
